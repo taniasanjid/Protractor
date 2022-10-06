@@ -2,7 +2,7 @@ describe('Roles', function() {
 
     it('Admin', function () {
 
-browser.get('http://pwc.fakedomain.com/index.html#/login');
+browser.get('');
   browser.waitForAngular();
     browser.sleep(2000);
   element(by.id('username')).sendKeys('taniasanjid9@gmail.com');
@@ -10,7 +10,7 @@ browser.get('http://pwc.fakedomain.com/index.html#/login');
   element(by.css("[aria-label='Login']")).click();
   browser.waitForAngular();
     browser.sleep(1000);
-  expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/index.html#/');
+  expect(browser.getCurrentUrl()).toBe('');
   element(by.xpath("//span[contains(.,'Dashboard')]")).click();
   element(by.xpath("//span[contains(.,'Private Wealth Solutions')]")).click();
   element(by.css('[ng-click="vm.gotoGeneralFolder()"]')).click();

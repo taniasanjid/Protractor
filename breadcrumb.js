@@ -51,13 +51,13 @@ it('Breadcrumb', function () {
 
    //login as external
 
-   expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/index.html#/login');
-   element(by.id('username')).sendKeys('tan.ias.an.jid9@gmail.com');
-  element(by.id('password')).sendKeys('1qazZAQ!');
+   expect(browser.getCurrentUrl()).toBe('');
+   element(by.id('username')).sendKeys('');
+  element(by.id('password')).sendKeys('');
   element(by.css("[aria-label='Login']")).click();
   browser.waitForAngular();
     browser.sleep(1000);
-    expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/index.html#/');
+    expect(browser.getCurrentUrl()).toBe('');
 
 
     element(by.xpath("//app-menu-item[3]/div/button")).click();//gets online app menu
@@ -80,7 +80,7 @@ it('Breadcrumb', function () {
     element(by.css("[aria-label='New Policy Application']")).click();
     element(by.css("[aria-label='Online application']")).click();
 
-    expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/index.html#/apply-online');
+    expect(browser.getCurrentUrl()).toBe('');
 
     element(by.css(".md-font.material-icons.icon-arrow-drop-down.md-dark-swiss-life-theme")).click(); 
     element(by.xpath("//button[contains(.,' Logout')]")).click(); 

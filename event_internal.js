@@ -1,8 +1,8 @@
 it('Event_internal', function () {
 //login
-expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/login');
-element(by.id('username')).sendKeys('tania.sanjid9@gmail.com');
-  element(by.id('password')).sendKeys('1qazZAQ!');
+expect(browser.getCurrentUrl()).toBe('');
+element(by.id('username')).sendKeys('');
+  element(by.id('password')).sendKeys('');
   element(by.css("[aria-label='Login']")).click();
   browser.waitForAngular();
   browser.sleep(10000);

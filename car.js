@@ -3,7 +3,7 @@ describe('car', function() {
     it('workflow', function () {
 
         //for EU and CAR
-        expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/index.html#/');
+        expect(browser.getCurrentUrl()).toBe('');
         element(by.xpath("//span[contains(.,'Online application')]")).click();//gets online app menu
         browser.waitForAngular();
         browser.sleep(1000);

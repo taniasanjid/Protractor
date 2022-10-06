@@ -2,13 +2,13 @@ describe('wp', function() {
 
     it('landing page', function() {
         var landing= element(by.xpath("//span[contains(.,'Wealth planning')]")).click().then(function(landing){
-            expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/slpc-landing-page');
+            expect(browser.getCurrentUrl()).toBe('');
         }); 
     });
 
     it('Content', function() {
        var content = element(by.xpath("//span[contains(.,'Search library')]")).click().then(function(content){
-        expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/search-library?Category=&Status=Published&SearchText=&Market=All');
+        expect(browser.getCurrentUrl()).toBe('');
        });
 
        element(by.xpath("//span[contains(.,'Create new')]")).click();
@@ -30,7 +30,7 @@ describe('wp', function() {
         });
 
         var save= element(by.xpath("//span[contains(.,'Save')]")).click().then(function(save){
-            expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/search-library?Category=&Status=Draft&SearchText=&Market=All');
+            expect(browser.getCurrentUrl()).toBe('');
             
         });
         element(by.id("clientSearch")).sendKeys('Content');
@@ -46,13 +46,13 @@ describe('wp', function() {
         element(by.css('[ng-click="vm.showModal();"')).click();
 
         var a = element(by.xpath("//span[contains(.,' Delete ')]")).click().then(function(a){
-            expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/search-library?Category=&Status=Published&SearchText=&Market=All'); 
+            expect(browser.getCurrentUrl()).toBe(''); 
         });
 
         element(by.css(".md-font.material-icons.icon-arrow-drop-down.md-dark-swiss-life-theme")).click(); 
 
         var logout= element(by.xpath("//button[contains(.,' Logout')]")).click().then(function(){
-            expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/login');
+            expect(browser.getCurrentUrl()).toBe('');
         });
 
         

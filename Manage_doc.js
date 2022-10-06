@@ -64,7 +64,7 @@ it('Manage_doc', function () {
 
     element(by.xpath("//div[2]/div/button[2]/span")).click();
     element(by.xpath("//span[contains(.,'Add documents')]")).click(); 
-    expect(browser.getCurrentUrl()).toBe('http://pwc.fakedomain.com/#/related-document/Luxembourg');
+    expect(browser.getCurrentUrl()).toBe('');
 
     //Search
     

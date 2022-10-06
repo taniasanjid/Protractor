@@ -2,7 +2,7 @@ describe('angular login page', function() {
 
   it('pageview', function(){
 
-   browser.get('http://www.e-swisslife.com/index.html#/login');
+   browser.get('');
    var EC = protractor.ExpectedConditions;
    browser.wait(EC.visibilityOf(element(by.id("username"))), 10000);
 
@@ -10,7 +10,7 @@ describe('angular login page', function() {
    element(by.id('password')).sendKeys('1qazZAQ!');
 
    var login = element(by.css("[aria-label='Login']")).click().then(function(loggedin){
-    expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/');
+    expect(browser.getCurrentUrl()).toBe('');
 
     });
   });

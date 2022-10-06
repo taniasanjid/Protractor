@@ -1,13 +1,13 @@
 describe('question', function() {
     it('questionaire', function(){
         var landing= element(by.xpath("//span[contains(.,'Wealth planning')]")).click().then(function(landing){
-         expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/slpc-landing-page');
+         expect(browser.getCurrentUrl()).toBe('');
         }); 
       
     
         
         var content = element(by.xpath("//span[contains(.,'Ask a question')]")).click().then(function(content){
-         expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/customer-query?Type=All&SearchText=&isEnableQuestionsView=false');
+         expect(browser.getCurrentUrl()).toBe('');
         });
 
         element(by.css('[ng-click="vm.askQuestion()"')).click();

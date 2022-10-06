@@ -1,7 +1,7 @@
 it('Login', function () {
 
 
-    browser.get('http://www.e-swisslife.com/index.html#/login');
+    browser.get('');
     browser.waitForAngular();
       browser.sleep(2000);
     element(by.id('username')).sendKeys('dilshad.tonu@gmail.com');
@@ -9,7 +9,7 @@ it('Login', function () {
     element(by.css("[aria-label='Login']")).click();
     browser.waitForAngular();
       browser.sleep(1000);
-    expect(browser.getCurrentUrl()).toBe('http://www.e-swisslife.com/index.html#/');
+    expect(browser.getCurrentUrl()).toBe('');
   
   
   });
